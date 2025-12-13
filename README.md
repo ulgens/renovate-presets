@@ -21,3 +21,5 @@ Include the presets in your Renovate configuration:
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or pull requests to improve the presets.
+
+Testing branch protection rules
