@@ -1,0 +1,27 @@
+// Python related settings
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    // https://docs.renovatebot.com/presets-docker/#dockerpindigests
+    "docker:pinDigests"
+  ],
+  "packageRules": [
+    {
+      "groupName": "Python",
+      "matchPackageNames": ["python"],
+    },
+    {
+      "groupName": "Python Dependencies",
+      "matchCategories": ["python"],
+    },
+    // Include Python dependencies that are not categorized under "python"
+    {
+      "groupName": "Python Dependencies",
+      "matchPackageNames": [
+        "prek",
+        "ruff", "astral-sh/ruff-pre-commit",
+        "uv", "astral-sh/setup-uv", "ghcr.io/astral-sh/uv",
+      ],
+    },
+  ],
+}

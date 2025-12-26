@@ -1,0 +1,13 @@
+// pre-commit / prek related settings
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "pre-commit Dependencies",
+      "matchManagers": ["pre-commit"],
+    },
+  ],
+  "pre-commit": {
+    "enabled": true,
+  },
+}
