@@ -19,6 +19,13 @@ repos:
         # Matching config for `prek sample-config` output
         args: [--mapping, '2', --sequence, '4', --offset, '2']
 
+  - repo: https://gitlab.com/bmares/check-json5
+    rev: v1.0.0
+    hooks:
+      - id: check-json5
+        # https://gitlab.com/bmares/check-json5/-/merge_requests/1
+        types: [json5]
+
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
