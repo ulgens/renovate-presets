@@ -10,7 +10,7 @@ Include the presets in your Renovate configuration:
 {
   "extends": [
     // https://github.com/ulgens/renovate-presets
-    "github>ulgens/renovate-presets:all.json5",
+    "github>ulgens/renovate-presets:all.json5#v0.0.1",
   ],
 }
 ```
