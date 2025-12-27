@@ -12,7 +12,7 @@ Include all presets in your Renovate configuration:
 {
   "extends": [
     // https://github.com/ulgens/renovate-presets
-    "github>ulgens/renovate-presets:all.json5#v0.0.2",
+    "github>ulgens/renovate-presets:all.json5#v0.0.3",
   ],
 }
 ```
@@ -23,9 +23,9 @@ or you can use a group of them:
 {
   "extends": [
     // https://github.com/ulgens/renovate-presets
-    "github>ulgens/renovate-presets:misc.json5#v0.0.2",
-    "github>ulgens/renovate-presets:pre-commit.json5#v0.0.2",
-    "github>ulgens/renovate-presets:python.json5#v0.0.2",
+    "github>ulgens/renovate-presets:misc.json5#v0.0.3",
+    "github>ulgens/renovate-presets:pre-commit.json5#v0.0.3",
+    "github>ulgens/renovate-presets:python.json5#v0.0.3",
   ],
 }
 ```
