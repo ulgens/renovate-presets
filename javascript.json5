@@ -1,0 +1,10 @@
+// JavaScript related settings
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "JavaScript Dependencies",
+      "matchCategories": ["js"],
+    },
+  ],
+}

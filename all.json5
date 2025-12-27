@@ -10,6 +10,9 @@
     // Docker related settings
     "github>ulgens/renovate-presets:docker.json5#v0.0.2",
 
+    // JavaScript related settings
+    "github>ulgens/renovate-presets:javascript.json5",
+
     // pre-commit / prek related settings
     "github>ulgens/renovate-presets:pre-commit.json5#v0.0.2",
 

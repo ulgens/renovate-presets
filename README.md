@@ -36,6 +36,7 @@ or you can use a group of them:
 - `misc`: Miscellaneous settings that don't directly relate to a particular category or manager
 - `ci`: CI related settings, including "CI Dependencies" group
 - `docker`: Docker related settings, including "Docker Dependencies" group
+- `javascript`: JavaScript related settings, including "JavaScript Dependencies" group
 - `pre-commit`: pre-commit / prek related settings, including "pre-commit Dependencies" group
 - `python`: Python related settings, including "Python" and "Python Dependencies" groups
 
