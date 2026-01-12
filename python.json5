@@ -19,8 +19,21 @@
     {
       "groupName": "Python Dependencies",
       "matchPackageNames": [
+        // Ruff related dependencies
+        // git hooks
+        // https://github.com/astral-sh/ruff-pre-commit
         "astral-sh/ruff-pre-commit",
-        "astral-sh/setup-uv", "ghcr.io/astral-sh/uv", "astral-sh/uv-pre-commit",
+
+        // uv related dependencies
+        // Docker image
+        // https://docs.astral.sh/uv/guides/integration/docker/
+        "ghcr.io/astral-sh/uv",
+        // GitHub Actions layer
+        // https://github.com/astral-sh/setup-uv
+        "astral-sh/setup-uv",
+        // git hooks
+        // https://github.com/astral-sh/uv-pre-commit
+        "astral-sh/uv-pre-commit",
       ],
     },
   ],
