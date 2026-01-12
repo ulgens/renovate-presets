@@ -24,6 +24,13 @@ repos:
     hooks:
       - id: check-json5
 
+  - repo: https://github.com/renovatebot/pre-commit-hooks
+    rev: 42.78.2
+    hooks:
+      - id: renovate-config-validator
+        args: [--strict]
+        files: .*\.json5$
+
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.1
     hooks:
