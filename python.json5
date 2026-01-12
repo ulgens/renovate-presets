@@ -16,7 +16,7 @@
       "matchPackageNames": [
         "prek",
         "ruff", "astral-sh/ruff-pre-commit",
-        "uv", "astral-sh/setup-uv", "ghcr.io/astral-sh/uv",
+        "uv", "astral-sh/setup-uv", "ghcr.io/astral-sh/uv", "astral-sh/uv-pre-commit",
       ],
     },
   ],
