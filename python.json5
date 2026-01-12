@@ -10,13 +10,17 @@
       "groupName": "Python Dependencies",
       "matchCategories": ["python"],
     },
-    // Include Python dependencies that are not categorized under "python"
+    // Include Python packages with custom definitions
+    {
+      "groupName": "Python Dependencies",
+      "matchDatasources": ["pypi"]
+    },
+    // Include Python & Python-related dependencies from non-PyPI sources
     {
       "groupName": "Python Dependencies",
       "matchPackageNames": [
-        "prek",
-        "ruff", "astral-sh/ruff-pre-commit",
-        "uv", "astral-sh/setup-uv", "ghcr.io/astral-sh/uv", "astral-sh/uv-pre-commit",
+        "astral-sh/ruff-pre-commit",
+        "astral-sh/setup-uv", "ghcr.io/astral-sh/uv", "astral-sh/uv-pre-commit",
       ],
     },
   ],
