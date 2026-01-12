@@ -21,7 +21,7 @@ repos:
     rev: 0.2.3
     hooks:
       - id: yamlfmt
-        priority: 10
+        priority: 0
         # Matching config for `prek sample-config` output
         args: [--mapping, '2', --sequence, '4', --offset, '2']
 
@@ -29,13 +29,13 @@ repos:
     rev: v1.0.1
     hooks:
       - id: check-json5
-        priority: 10
+        priority: 0
 
   - repo: https://github.com/renovatebot/pre-commit-hooks
     rev: 42.78.2
     hooks:
       - id: renovate-config-validator
-        priority: 20
+        priority: 0
         args: [--strict]
         files: .*\.json5$
 
