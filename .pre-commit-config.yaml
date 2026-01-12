@@ -3,20 +3,27 @@ repos:
     rev: v6.0.0
     hooks:
       - id: check-case-conflict
+        priority: 0
       - id: check-merge-conflict
+        priority: 0
       - id: check-yaml
+        priority: 0
       - id: end-of-file-fixer
+        priority: 0
       - id: trailing-whitespace
+        priority: 0
 
   - repo: https://github.com/google/yamlfmt
     rev: v0.21.0
     hooks:
       - id: yamlfmt
+        priority: 0
 
   - repo: https://github.com/renovatebot/pre-commit-hooks
     rev: 42.78.2
     hooks:
       - id: renovate-config-validator
+        priority: 0
         args: ["--strict"]
         files: .*\.json5$
 
@@ -24,3 +31,4 @@ repos:
     rev: v2.4.1
     hooks:
       - id: codespell
+        priority: 0
