@@ -22,7 +22,7 @@ repos:
     rev: 42.78.2
     hooks:
       - id: renovate-config-validator
-        args: [--strict]
+        args: ["--strict"]
         files: .*\.json5$
 
   - repo: https://github.com/codespell-project/codespell
