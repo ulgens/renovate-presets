@@ -37,4 +37,8 @@
   "lockFileMaintenance": {
     "enabled": true,
   },
+  // https://docs.renovatebot.com/key-concepts/minimum-release-age/
+  // I remember reading that the longest time an injection issue ever handled in PyPI was 4 days,
+  // so 3 days should be good middle ground. Can be revisited later.
+  "minimumReleaseAge": "3 days",
 }
