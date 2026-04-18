@@ -20,6 +20,10 @@
       "groupName": "Python Dependencies",
       "matchPackageNames": [
         // Ruff related dependencies
+        // pypi package - used in pyproject.toml for easier IDE integration
+        // This is already caught by pypi data source match,
+        // but duplicated here in sake of completeness - readability.
+        "ruff",
         // git hooks
         // https://github.com/astral-sh/ruff-pre-commit
         "astral-sh/ruff-pre-commit",
