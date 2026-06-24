@@ -18,5 +18,9 @@
 
     // Python related settings
     "github>ulgens/renovate-presets:python.json5#v0.0.6",
+
+    // Service related settings
+    "github>ulgens/renovate-presets:postgresql.json5",
+    "github>ulgens/renovate-presets:redis.json5",
   ],
 }
