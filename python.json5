@@ -7,28 +7,28 @@
       "matchPackageNames": ["python"],
     },
     {
-      "groupName": "Python Dependencies",
+      "groupName": "Python Packages",
       "matchCategories": ["python"],
     },
     // Include Python packages with custom definitions
     {
-      "groupName": "Python Dependencies",
+      "groupName": "Python Packages",
       "matchDatasources": ["pypi"]
     },
-    // Include Python & Python-related dependencies from non-PyPI sources
+    // Python Tools
     {
-      "groupName": "Python Dependencies",
+      "groupName": "Python Tools",
       "matchPackageNames": [
         // Ruff related dependencies
         // PyPI package - used in pyproject.toml for easier IDE integration
-        // This is already caught by pypi data source match,
-        // but duplicated here for the sake of completeness - readability.
         "ruff",
         // git hooks
         // https://github.com/astral-sh/ruff-pre-commit
         "astral-sh/ruff-pre-commit",
 
         // uv related dependencies
+        // Custom dependency for CI workflows
+        "uv",
         // Docker image
         // https://docs.astral.sh/uv/guides/integration/docker/
         "ghcr.io/astral-sh/uv",
@@ -38,6 +38,11 @@
         // git hooks
         // https://github.com/astral-sh/uv-pre-commit
         "astral-sh/uv-pre-commit",
+
+        // git hooks
+        // https://github.com/tox-dev/pyproject-fmt
+        "tox-dev/pyproject-fmt",
+
       ],
     },
   ],
