@@ -26,6 +26,13 @@
         // https://github.com/astral-sh/ruff-pre-commit
         "astral-sh/ruff-pre-commit",
 
+        // ty
+        // PyPI package - no use case but adding just in case
+        "ty",
+        // git hooks
+        // https://github.com/astral-sh/ty-pre-commit
+        "astral-sh/ty-pre-commit",
+
         // uv related dependencies
         // Custom dependency for CI workflows
         "uv",
