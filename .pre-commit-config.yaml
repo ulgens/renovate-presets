@@ -20,6 +20,19 @@ repos:
         args: ["--strict"]
         files: .*\.json5$
 
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.37.4
+    hooks:
+      - id: check-github-workflows
+      # TODO:
+      #   Make use of https://github.com/python-jsonschema/check-jsonschema/pull/695
+      #   when it's included in a release.
+      - id: check-jsonschema
+        name: "Check GitHub Workflows set timeout-minutes"
+        files: ^\.github/workflows/[^/]+$
+        types: [yaml]
+        args: ["--builtin-schema", "github-workflows-require-timeout"]
+
   - repo: https://github.com/zizmorcore/zizmor-pre-commit
     rev: v1.25.2
     hooks:
