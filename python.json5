@@ -9,6 +9,9 @@
     {
       "groupName": "Python Packages",
       "matchCategories": ["python"],
+      // Renovate mistakenly declares pre-commit deps as category:python
+      // https://github.com/renovatebot/renovate/discussions/44958#discussioncomment-17842859
+      "matchManagers": ["!pre-commit"]
     },
     // Include Python packages with custom definitions
     {
